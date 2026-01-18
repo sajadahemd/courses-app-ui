@@ -19,9 +19,12 @@ class CoursesApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.light,
-      home: const MainScreen(),
-      onGenerateRoute: (settings) {
-        // Handle unknown routes
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const MainScreen(),
+      },
+      onUnknownRoute: (settings) {
+        // Handle unknown routes with 404 screen
         return MaterialPageRoute(
           builder: (context) => const NotFoundScreen(),
         );
