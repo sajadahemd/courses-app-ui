@@ -4,6 +4,10 @@
 
 **URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
+## Flutter Version
+
+A Flutter implementation of this UI is available in the `flutter_app/` directory. See [flutter_app/README.md](flutter_app/README.md) for details on running the Flutter version.
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
